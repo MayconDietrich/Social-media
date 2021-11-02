@@ -1,0 +1,34 @@
+.container__react {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+}
+
+.like {
+  display: flex;
+  align-items: center;
+  width: 5rem;
+  justify-content: center;
+}
+
+.like-button {
+  border: none;
+  background-color: transparent;
+}
+
+.like-icon {
+  width: 2rem;
+  height: 2rem;
+  transition: 100ms;
+}
+
+.like-icon:hover {
+  cursor: pointer;
+  transition: 100ms;
+  transform: scale(1.1);
+}
+
+.container__comment {
+  margin-left: 70%;
+  align-self: flex-end;
+}

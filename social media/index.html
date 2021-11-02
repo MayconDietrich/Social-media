@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <title>Lifebook</title>
+</head>
+<body>
+
+  <header class="header">
+    <img src="./assets/img/logo.svg" class="header__logo" alt="Livesbook's logo">
+    <ul class="font header__list">
+      <a href="index.html" class="header__item">Home</a>
+      <a href="login.html" class="header__item">Login into Livebook</a>
+      <h2 class="header__item">Exit</h2>
+    </ul>
+  </header>
+
+  <main class="cards main">
+    <img src="./assets/img/landscape_login.jpg" alt class="main__img">
+
+    <button class="button font">Go top</button>
+
+
+    <div class="posts form-gradient">
+      <div class="container">
+        <div class="user">
+          <img src="./assets/img/user_1.jpg" class="user__img" alt="User photo">
+          <p class="user__name font">Clarissa Wolkmen</p>
+        </div>
+        <h2 class="font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget congue odio. Duis nec rutrum ligula. Cras dictum nulla ut.</h2>
+        <img src="./assets/img/pb_1.jpg" class="container__img" alt="Publication image">
+        <div class="container__react">  
+          <span id="counter">0</span>
+          <button onclick="likeClick(event, this.id)" id="button1" class="counter-plus container__like like-button"><img src="./assets/img/like.svg" id="button1_img" class="like-icon" alt="Like icon"></button>
+          <button class="container__comment font remove-button-style" onclick="comment()">Comment</button></div>
+      </div>
+  
+      <div class="container">
+        <div class="user">
+          <img src="./assets/img/user_2.jpg" class="user__img" alt="User photo">
+          <p class="user__name font">Elise Frye</p>
+        </div>
+        <h2 class="font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed enim nulla, fringilla ut tempus nec, rutrum nec erat. Sed interdum orci quis cursus varius. Nulla facilisi. Mauris sodales nec urna.</h2>
+        <img src="./assets/img/pb_2.jpg" class="container__img" alt="Publication image">
+        <div class="container__react"> 
+          <span id="counter">1</span>
+          <button onclick="likeClick(event, this.id)" id="button2" class="counter-plus container__like like-button"><img src="./assets/img/like.svg" class="like-icon" alt="Like icon"></button>
+          <button class="container__comment font remove-button-style" onclick="comment()">Comment</button></div>
+      </div>
+  
+      <div class="container">
+        <div class="user">
+          <img src="./assets/img/user_3.jpg" class="user__img" alt="User photo">
+          <p class="user__name font">Dora Front</p>
+        </div>
+        <h2 class="font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget congue odio. Duis nec rutrum ligula. Cras dictum nulla ut.</h2>
+        <img src="./assets/img/pb_3.jpg" class="container__img" alt="Publication image">
+        <div class="container__react"> 
+          <span id="counter">2</span>
+          <button onclick="likeClick(event, this.id)" id="button3" class="counter-plus container__like like-button"><img src="./assets/img/like.svg" class="like-icon" alt="Like icon"></button>
+          <button class="container__comment font remove-button-style" onclick="comment()">Comment</button></div>
+      </div>
+  
+      <div class="container">
+        <div class="user">
+          <img src="./assets/img/user_4.jpg" class="user__img" alt="User photo">
+          <p class="user__name font">Ethan Lore</p>
+        </div>
+        <h2 class="font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed enim nulla, fringilla ut tempus nec, rutrum nec erat. Sed interdum orci quis cursus varius. Nulla facilisi. Mauris sodales nec urna.</h2>
+        <img src="./assets/img/pb_4.jpg" class="container__img" alt="Publication image">
+        <div class="container__react"> 
+          <span id="counter">0</span>
+          <button onclick="likeClick(event, this.id)" id="button4" class="counter-plus container__like like-button"><img src="./assets/img/like.svg" class="like-icon" alt="Like icon"></button>
+          <button class="container__comment font remove-button-style" onclick="comment()">Comment</button></div>
+      </div>
+  
+      <div class="container">
+        <div class="user">
+          <img src="./assets/img/user_5.jpg" class="user__img" alt="User photo">
+          <p class="user__name font">Johnathan Lizzard</p>
+        </div>
+        <h2 class="font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget congue odio. Duis nec rutrum ligula. Cras dictum nulla ut.</h2>
+        <img src="./assets/img/pb_5.jpg" class="container__img" alt="Publication image">
+        <div class="container__react"> 
+          <span id="counter">0</span>
+          <button onclick="likeClick(event, this.id)" id="button5" class="counter-plus container__like like-button"><img src="./assets/img/like.svg" class="like-icon" alt="Like icon"></button>
+          <button class="container__comment font remove-button-style" onclick="comment()">Comment</button></div>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal display-none">
+      <div id="modal__js">
+      <div class="modal-content">
+        <button class="close remove-button-style" onclick="closeModal()">&times;</button>
+        <div class="user">
+          <img src="./assets/img/user_3.jpg" class="user__img" alt="User photo">
+          <p class="user__name font">Dora Front</p>
+        </div>
+        <p class="comment-user">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec pharetra mauris. Phasellus pharetra enim nulla, sit amet ornare nisi pellentesque sit amet. Proin nec metus eu lacus dapibus pulvinar.</p>
+        <img src="./assets/img/like.svg" id="comment__button" class="comment__button" alt="Like icon">
+        <img src="./assets/img/dislike.svg" id="comment__button" class="comment__button" alt="Like icon">
+
+        <button class="btn-comment remove-button-style">Comment</button>
+    
+    </div>
+
+  </main>
+
+</body>
+<script src="./assets/js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="./assets/js/react.js"></script>
+<script src="./assets/js/comment.js"></script>
+</html>

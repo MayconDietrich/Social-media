@@ -1,0 +1,93 @@
+.comment {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 85%;
+}
+
+.comment-custom {
+  display: flex;
+  padding: 1rem;
+}
+
+.input__comment {
+  height: 2rem;
+}
+
+
+.comments {
+  display: flex;
+  align-self: flex-end;
+}
+
+.comment__text {
+  margin-left: 1rem;
+}
+
+.remove-button-style {
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-content {
+  background-color: var(--light-gray);
+  margin: 15% auto;
+  padding: 20px;
+  border: 2px solid var(--pink);
+  width: 39.5rem;
+}
+
+.close {
+  content: 'x';
+  color: var(--black);
+  width: 32px;
+  height: 32px;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  font-size: 30px;
+  font-weight: bold;
+  float: right;
+}
+
+.comment-user {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.comment__button {
+  width: 1.5rem;
+  transition: 200ms;
+}
+
+.comment__button:hover {
+  transform: scale(1.1);
+  transition: 200ms;
+  cursor: pointer;
+}
+
+.btn-comment {
+  float: right;
+  margin-top: 1.5rem;
+}
+
+#modal__js {
+  width: 100%;
+  height: 100%;
+}

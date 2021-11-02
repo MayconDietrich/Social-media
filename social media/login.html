@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <title>Lifebook | Login</title>
+</head>
+<body class="bg-form">
+
+  <header class="header">
+    <img src="./assets/img/logo.svg" class="header__logo" alt="Livesbook's logo">
+    <ul class="font header__list">
+      <a href="index.html" class="header__item">Home</a>
+      <a href="login.html" class="header__item">Login into Livebook</a>
+      <h2 class="header__item">Exit</h2>
+    </ul>
+  </header>
+
+
+  <div class="div-form">
+    <form class="form form-gradient">
+      <img src="./assets/img/logo.svg" class="header__logo logo-login" alt="Livesbook's logo">
+      <label class="font form__title" for="name">Insert your username</label>
+      <input type="text" placeholder="Insert your username" id="name" class="form__input">
+      <label class="font form__title" for="e-mail">Insert your e-mail</label>
+      <input type="text" placeholder="example@email.com" id="e-mail" class="form__input">
+      <label class="font form__title" for="password">Insert your password</label>
+      <input type="password" placeholder="Password" id="password" class="form__input">
+      <button type="button" class="btn-login font" onclick="getCookie()">Login</button>
+    </form>
+  </div>
+</body>
+
+<script src="./assets/js/user.js"></script>
+</html>

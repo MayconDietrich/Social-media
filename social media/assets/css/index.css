@@ -1,0 +1,32 @@
+@import url(_reset.css);
+@import url(_variables.css);
+@import url(_header.css);
+@import url(_main.css);
+@import url(_reactions.css);
+@import url(_form.css);
+@import url(_comment.css);
+
+.font {
+  font-family: 'Poppins', sans-serif;
+}
+
+.display-none {
+  display: none;
+}
+
+.scroll-lock {
+  overflow: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--light-gray);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--pink);
+  border-radius: 50px;
+}
